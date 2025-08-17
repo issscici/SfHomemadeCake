@@ -1,0 +1,104 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf7;
+  color: #333;
+}
+
+/* 页头 */
+header {
+  background: #eec1d2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 菜单容器 */
+#products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 强制两列 */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 每个蛋糕卡片 */
+.cake-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.cake-card:hover {
+  transform: scale(1.05);
+}
+
+/* 图片 */
+.cake-card img {
+  width: 100%;          /* 撑满卡片宽度 */
+  height: 250px;        /* 固定高度，可改成200px或300px */
+  object-fit: cover;    /* 裁剪并保持比例 */
+  border-radius: 12px;
+}
+
+
+/* 标题 & 价格 */
+.cake-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+.cake-card p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+/* WhatsApp 按钮 */
+.cake-card button {
+  background: #91c9f1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cake-card button:hover {
+  background: #91c9f1;
+}
+
+.cake-card button:hover {
+  background: #91c9f1;
+}
+
+/* ====== 新加的 header logo 样式 ====== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 水平居中 */
+  background: #eec1d2;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 70px; /* logo 高度 */
+  margin-right: 15px;
+}
+
+.title-text h1 {
+  margin: 0;
+  font-size: 26px;
+  color: white;
+}
+
+.title-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #fff5f5;
+}
+
